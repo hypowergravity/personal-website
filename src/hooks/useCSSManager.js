@@ -55,10 +55,12 @@ function useCSSManager(cssUrls = [], options = {}) {
     const loadPromises = cssUrls.map(loadCSS);
     Promise.all(loadPromises).catch(console.error);
 
+    // Capture current ref value for cleanup
+    const currentLoaded = loadedRef.current;
+    
     // Cleanup function
     return () => {
       if (removeOnUnmount) {
-        const currentLoaded = loadedRef.current;
         cssUrls.forEach((href) => {
           const link = document.querySelector(`link[href="${href}"]`);
           if (link && document.head.contains(link)) {
