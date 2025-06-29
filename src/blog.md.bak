@@ -1,0 +1,68 @@
+# Blog
+
+## Time Resolved Crystallography: Capturing Molecular Movies
+
+Time-resolved crystallography is a powerful technique that allows scientists to visualize the structural changes of proteins and other macromolecules as they perform their functions. Unlike traditional X-ray crystallography, which provides static snapshots, time-resolved methods capture a series of structural states over time—essentially creating molecular movies.
+
+### The Fundamentals
+
+The basic principle involves triggering a reaction within a crystal and collecting diffraction data at specific time points after initiation. This can be achieved through various methods:
+
+- **Pump-probe techniques**: Using laser pulses to initiate reactions followed by X-ray pulses to capture structural information
+- **Temperature-jump methods**: Rapidly changing temperature to induce conformational changes
+- **Mixing experiments**: Introducing substrates or ligands to crystals to start reactions
+
+### Recent Advances
+
+Recent developments in X-ray free-electron lasers (XFELs) have revolutionized time-resolved crystallography. These intense X-ray sources enable:
+
+- Femtosecond time resolution
+- Room-temperature experiments (avoiding cryogenic artifacts)
+- Serial crystallography with microcrystals
+- Observation of ultrafast processes previously invisible
+
+### Challenges in Data Analysis
+
+One of the major challenges in time-resolved crystallography is interpreting the resulting data. Multiple conformations often exist simultaneously during a reaction, requiring sophisticated methods for:
+
+- Multi-conformational refinement
+- Ensemble modeling
+- Occupancy refinement
+- Electron density interpretation
+
+My research focuses on developing advanced algorithms to address these analytical challenges, particularly for multi-conformational modeling of time-resolved crystallographic data.
+
+---
+
+## Retrosynthesis and AI: Revolutionizing Chemical Design
+
+Retrosynthesis—the process of working backward from a target molecule to available starting materials—has been transformed by artificial intelligence. This approach is revolutionizing how chemists design synthetic routes and accelerating drug discovery.
+
+### Traditional vs. AI-Driven Retrosynthesis
+
+Traditionally, retrosynthesis relied heavily on chemists' intuition and knowledge of reaction mechanisms. AI-driven approaches offer several advantages:
+
+- Processing vast chemical databases in seconds
+- Identifying non-obvious synthetic routes
+- Suggesting alternative pathways when reagents are unavailable
+- Optimizing for cost, safety, and environmental impact
+
+### How It Works
+
+Modern AI retrosynthesis tools typically use:
+
+1. **Neural networks**: Trained on millions of known reactions to recognize patterns
+2. **Monte Carlo tree search**: Exploring possible synthesis routes systematically
+3. **Reinforcement learning**: Improving predictions through feedback
+4. **Knowledge graphs**: Representing chemical relationships and transformations
+
+### Current Limitations and Future Directions
+
+Despite impressive advances, challenges remain:
+
+- Predicting stereochemistry accurately
+- Handling complex heterocyclic compounds
+- Accounting for solvent effects and reaction conditions
+- Integrating with automated synthesis platforms
+
+The future of this field likely lies in combining computational predictions with experimental validation in closed-loop systems, where AI suggests routes, robotic systems test them, and results feed back to improve future predictions.
