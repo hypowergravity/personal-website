@@ -58,16 +58,17 @@ function useCSSManager(cssUrls = [], options = {}) {
     // Cleanup function
     return () => {
       if (removeOnUnmount) {
+        const currentLoaded = loadedRef.current;
         cssUrls.forEach((href) => {
           const link = document.querySelector(`link[href="${href}"]`);
           if (link && document.head.contains(link)) {
             document.head.removeChild(link);
           }
-          loadedRef.current.delete(href);
+          currentLoaded.delete(href);
         });
       }
     };
-  }, [cssUrls.join(","), preload, removeOnUnmount]);
+  }, [cssUrls, preload, removeOnUnmount]);
 
   return loadedRef.current;
 }

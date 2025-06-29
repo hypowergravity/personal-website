@@ -5,7 +5,7 @@ import { useTheme } from "../hooks/useTheme";
 import { useMenu } from "../hooks/useMenu";
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   const { isMenuActive, toggleMenu, closeMenu } = useMenu();
 
   return (
