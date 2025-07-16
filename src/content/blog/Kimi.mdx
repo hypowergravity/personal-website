@@ -32,9 +32,9 @@ KIMI-K2-Instruct is an open-source instruction-tuned model developed with a focu
 ## Benchmark Categories
 
 To understand how LLMs like KIMI-K2 are evaluated, it’s helpful to break benchmarks into three categories:
-	•	Agentic and Competitive Coding
-	•	Tool Use and Function Calling
-	•	Math and STEM Reasoning
+* Agentic and Competitive Coding
+* Tool Use and Function Calling
+* Math and STEM Reasoning
 
 Let’s look at what each of these covers, and the datasets commonly used.
 
@@ -45,24 +45,24 @@ Let’s look at what each of these covers, and the datasets commonly used.
 These benchmarks test whether a model can understand and write code in realistic or competitive programming settings.
 
 1. SWE-bench Verified
-	•	Based on real GitHub issues and actual repositories.
-	•	The model is asked to fix a bug or complete a feature based on the issue description.
-	•	The fix is automatically tested in the repo to check if it works.
-	•	Focuses mostly on Python code.
+* Based on real GitHub issues and actual repositories.
+* The model is asked to fix a bug or complete a feature based on the issue description.
+* The fix is automatically tested in the repo to check if it works.
+* Focuses mostly on Python code.
 
 2. SWE-bench Multilingual
-	•	The same format as above, but includes multiple languages such as C++, Java, and JavaScript.
-	•	Helps evaluate how well a model performs outside Python.
+* The same format as above, but includes multiple languages such as C++, Java, and JavaScript.
+* Helps evaluate how well a model performs outside Python.
 
 3. LiveCodeBench v6
-	•	Designed to simulate a live coding session.
-	•	The model solves coding tasks with iterative feedback, similar to a developer working in an IDE.
-	•	Performance is measured by how well the code runs and passes tests.
+* Designed to simulate a live coding session.
+* The model solves coding tasks with iterative feedback, similar to a developer working in an IDE.
+* Performance is measured by how well the code runs and passes tests.
 
 4. OJBench
-	•	A collection of classic algorithmic coding problems, like those from Leetcode or Codeforces.
-	•	The model must generate full solutions that pass various input/output test cases.
-	•	This is considered one of the more challenging benchmarks for LLMs.
+* A collection of classic algorithmic coding problems, like those from Leetcode or Codeforces.
+* The model must generate full solutions that pass various input/output test cases.
+* This is considered one of the more challenging benchmarks for LLMs.
 
 ---
 
@@ -71,9 +71,9 @@ These benchmarks test whether a model can understand and write code in realistic
 These benchmarks look at how well a model can understand when and how to use tools or functions.
 
 5. Tau2-bench
-	•	Tasks are designed to simulate tool use, like calling a calculator, calendar, or web search tool.
-	•	The model must figure out which tool is needed and use it correctly.
-	•	This is an important area for future agent-based LLMs that interact with real-world systems.
+* Tasks are designed to simulate tool use, like calling a calculator, calendar, or web search tool.
+* The model must figure out which tool is needed and use it correctly.
+* This is an important area for future agent-based LLMs that interact with real-world systems.
 ---
 
 ### Math and STEM
@@ -81,18 +81,18 @@ These benchmarks look at how well a model can understand when and how to use too
 These benchmarks test logical, mathematical, and scientific reasoning.
 
 6. AceBench (English)
-	•	Contains questions from university entrance exams.
-	•	Covers a mix of math, physics, chemistry, and other STEM subjects.
-	•	Usually multiple choice or short answer format.
+* Contains questions from university entrance exams.
+* Covers a mix of math, physics, chemistry, and other STEM subjects.
+* Usually multiple choice or short answer format.
 
 7. AIME 2025
-	•	Based on the American Invitational Mathematics Examination.
-	•	Focuses on advanced high school math: algebra, number theory, combinatorics, etc.
-	•	Answers are numeric (0–999).
+* Based on the American Invitational Mathematics Examination.
+* Focuses on advanced high school math: algebra, number theory, combinatorics, etc.
+* Answers are numeric (0–999).
 
 8. GPQA-Diamond
-	•	Graduate-level physics questions that test deep understanding.
-	•	These are some of the most challenging conceptual problems.
+* Graduate-level physics questions that test deep understanding.
+* These are some of the most challenging conceptual problems.
 ---
 
 ### How KIMI-K2 Performs
