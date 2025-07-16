@@ -1,0 +1,114 @@
+---
+title: "Kimi-K2"
+date: "2025-07-15"
+category: "AI"
+tags: ["AI", "Kimi"]
+featured: true
+excerpt: "Moonshot AI"
+author: "Sriram"
+---
+
+
+# Understanding Benchmark Datasets for LLM Coding Evaluation: A Closer Look at KIMI-2
+
+[https://github.com/MoonshotAI/Kimi-K2/raw/main/figures/kimi-logo.png](https://github.com/MoonshotAI/Kimi-K2)
+
+As large language models (LLMs) become increasingly capable, it’s important to understand how we evaluate them—especially for tasks like coding, math, and tool use. In this post, we’ll walk through the key benchmark datasets used to assess coding-focused LLMs and take a closer look at how an open-source model called KIMI-2-Instruct is performing across these benchmarks.
+
+We’ll keep things simple and clear, aiming to make the world of LLM evaluation a bit more approachable.
+
+A Gentle Introduction to KIMI-2
+
+KIMI-2-Instruct is an open-source instruction-tuned model developed with a focus on reasoning, tool use, and helpful responses. Despite being lightweight compared to some commercial offerings, KIMI-2 shows strong performance across several technical tasks. What makes it especially interesting is that it’s accessible to the public and yet performs on par with some of the best proprietary models in specific areas.
+
+## Benchmark Categories
+
+To understand how LLMs like KIMI-2 are evaluated, it’s helpful to break benchmarks into three categories:
+	•	Agentic and Competitive Coding
+	•	Tool Use and Function Calling
+	•	Math and STEM Reasoning
+
+Let’s look at what each of these covers, and the datasets commonly used.
+
+⸻
+
+### Agentic and Competitive Coding
+
+These benchmarks test whether a model can understand and write code in realistic or competitive programming settings.
+
+1. SWE-bench Verified
+	•	Based on real GitHub issues and actual repositories.
+	•	The model is asked to fix a bug or complete a feature based on the issue description.
+	•	The fix is automatically tested in the repo to check if it works.
+	•	Focuses mostly on Python code.
+
+2. SWE-bench Multilingual
+	•	The same format as above, but includes multiple languages such as C++, Java, and JavaScript.
+	•	Helps evaluate how well a model performs outside Python.
+
+3. LiveCodeBench v6
+	•	Designed to simulate a live coding session.
+	•	The model solves coding tasks with iterative feedback, similar to a developer working in an IDE.
+	•	Performance is measured by how well the code runs and passes tests.
+
+4. OJBench
+	•	A collection of classic algorithmic coding problems, like those from Leetcode or Codeforces.
+	•	The model must generate full solutions that pass various input/output test cases.
+	•	This is considered one of the more challenging benchmarks for LLMs.
+
+⸻
+
+### Tool Use
+
+These benchmarks look at how well a model can understand when and how to use tools or functions.
+
+5. Tau2-bench
+	•	Tasks are designed to simulate tool use, like calling a calculator, calendar, or web search tool.
+	•	The model must figure out which tool is needed and use it correctly.
+	•	This is an important area for future agent-based LLMs that interact with real-world systems.
+
+⸻
+
+### Math and STEM
+
+These benchmarks test logical, mathematical, and scientific reasoning.
+
+6. AceBench (English)
+	•	Contains questions from university entrance exams.
+	•	Covers a mix of math, physics, chemistry, and other STEM subjects.
+	•	Usually multiple choice or short answer format.
+
+7. AIME 2025
+	•	Based on the American Invitational Mathematics Examination.
+	•	Focuses on advanced high school math: algebra, number theory, combinatorics, etc.
+	•	Answers are numeric (0–999).
+
+8. GPQA-Diamond
+	•	Graduate-level physics questions that test deep understanding.
+	•	These are some of the most challenging conceptual problems.
+
+⸻
+
+### How KIMI-2 Performs
+
+KIMI-2-Instruct has shown impressive performance across many of these tasks:
+
+Benchmark	KIMI-2 Score	What It Tells Us
+SWE-bench Verified	65.8	Strong at realistic software maintenance tasks
+SWE-bench Multilingual	47.3	Good across different programming languages
+LiveCodeBench v6	53.7	Handles live coding tasks well
+OJBench	27.1	Best among tested models, but room for growth
+Tau2-bench	66.1	Very capable with tool and function use
+AceBench (en)	78.5	Competitive in general STEM reasoning
+AIME 2025	49.5	Handles advanced math better than many open models
+GPQA-Diamond	75.1	Strong grasp of physics concepts
+
+
+⸻
+
+## Final Thoughts
+
+Understanding benchmark datasets helps demystify the claims made about LLM performance. KIMI-2-Instruct is a great example of how an open model can punch above its weight, offering excellent performance in code understanding, bug fixing, and even mathematical reasoning.
+
+⸻
+
