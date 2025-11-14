@@ -1009,6 +1009,14 @@ img[src="#"] {
   }
 }
 
+img[alt=chasing_the_drug_chapter1] { width: 50%; }
+img[alt=chasing_the_drug_chapter2] { width: 50%; }
+img[alt=chasing_the_drug_chapter3] { width: 50%; }
+img[alt=chasing_the_drug_chapter4] { width: 50%; }
+img[alt=chasing_the_drug_chapter5] { width: 50%; }
+img[alt=chasing_the_drug_chapter6] { width: 50%; }
+img[alt=chasing_drug_title] { width: 50%; }
+
 /* Profile image styling */
 .profile-image {
   max-width: 300px;
