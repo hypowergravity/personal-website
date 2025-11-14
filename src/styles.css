@@ -995,7 +995,7 @@ img[src="#"] {
 }
 
 /*Blog image*/
-blog-image{
+.blog-image{
   width: 50%;
 }
 
