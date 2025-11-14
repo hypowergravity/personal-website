@@ -994,6 +994,11 @@ img[src="#"] {
   font-weight: 600;
 }
 
+/*Blog image*/
+blog-image{
+  width: 50%;
+}
+
 /* Profile image styling */
 .profile-image {
   max-width: 300px;
