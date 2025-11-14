@@ -995,8 +995,18 @@ img[src="#"] {
 }
 
 /*Blog image*/
-.blog-image{
-  width: 50%;
+.blog-image {
+  width: 100%;           /* Full width on mobile */
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .blog-image {
+    width: 50%;          /* Your original 50% on larger screens */
+  }
 }
 
 /* Profile image styling */
