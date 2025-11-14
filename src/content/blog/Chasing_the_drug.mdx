@@ -63,13 +63,13 @@ Even rare proteins are frequently encountered when enough small molecules move r
 
 Once diffusion brings them together, binding follows the fundamental law of mass action:
 
-$$P + D \rightleftharpoons PD$$
+$$P + D \\rightleftharpoons PD$$
 
-$$K_d = \frac{[P][D]}{[PD]}$$
+$$K_d = \\frac{[P][D]}{[PD]}$$
 
 The fraction of protein bound depends on drug concentration relative to the binding constant:
 
-$$f_b = \frac{[D]}{[D] + K_d}$$
+$$f_b = \\frac{[D]}{[D] + K_d}$$
 
 Remarkably, even low-abundance proteins can be efficiently inhibited if the drug concentration exceeds the $K_d$(Dissociation Constant) value. **Function depends on affinity and local concentration, not protein abundance.**
 
@@ -97,7 +97,7 @@ Even when Tom thinks he's found the perfect Jerry, the cellular reality is more 
 
 In cellular space, a drug molecule collides with thousands of proteins per second. While most encounters are transient, the sheer frequency makes off-target binding statistically certain:
 
-$$\text{Encounter rate} \propto D \times [\text{Protein}] \times [\text{Drug}]$$
+$$\\text{Encounter rate} \\propto D \\times [\\text{Protein}] \\times [\\text{Drug}]$$
 
 Even binding that's 100-fold weaker than the main target can produce measurable biological effects.
 
@@ -167,7 +167,7 @@ Consider the binding pocket challenge:
 
 High-affinity ligands (ΔG ≈ −10 to −14 kcal/mol) optimize the same fundamental interactions across family members:
 
-$$\Delta G_{bind} = \Delta H_{interactions} - T\Delta S_{conf}$$
+$$\\Delta G_{bind} = \\Delta H_{interactions} - T\\Delta S_{conf}$$
 
 Perfect complementarity to one pocket often translates to good complementarity elsewhere.
 
@@ -204,7 +204,7 @@ Tom decides to get smart about his chase, consulting computational oracles. But 
 
 Computational pipelines (docking, machine learning, diffusion models) excel at estimating binding affinity:
 
-$$\Delta G_{bind} \approx -RT \ln K_d$$
+$$\\Delta G_{bind} \\approx -RT \\ln K_d$$
 
 But cells care about much more:
 - **When** and **how long** binding occurs (kinetics)
@@ -218,7 +218,7 @@ Computation captures perhaps 10% of the relevant biophysical landscape.
 
 Docking scores approximate complex energetics with simple terms:
 
-$$\text{Score} = w_1E_{vdW} + w_2E_{elec} + w_3E_{hydrophobic} + w_4E_{Hbond} + ...$$
+$$\\text{Score} = w_1E_{vdW} + w_2E_{elec} + w_3E_{hydrophobic} + w_4E_{Hbond} + ...$$
 
 This approach misses:
 - Entropic penalties from protein flexibility
