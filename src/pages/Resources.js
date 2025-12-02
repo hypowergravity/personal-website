@@ -56,8 +56,8 @@ function Resources() {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              a: ({ node, ...props }) => (
-                <a {...props} target="_blank" rel="noreferrer" />
+              a: ({ node, children, ...props }) => (
+                <a {...props} target="_blank" rel="noreferrer">{children}</a>
               ),
             }}
           >
