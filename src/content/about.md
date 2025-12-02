@@ -1,10 +1,10 @@
 ## About Me
 
-I am a computational biophysicist with a deep interest in understanding the functional biochemistry of macromolecules through structural biology. My research journey has taken me from experimental biophysics to computational approaches, where I work to understand structure-function relationships of biological systems, particularly photosensitive proteins.
+I’m a curious molecular physicist exploring how molecules move, interact, and transform across space and time. My path has included experimental biophysics and computational work, and I’m learning to connect structure and function in biological systems, including photo‑sensitive proteins.
 
 ### Professional Journey
 
-Currently, I serve as a Postdoctoral Fellow at the Yoshioka lab, ICReDD (Institute for Chemical Reaction Design and Discovery), Hokkaido University, where I contribute to research in chemical reaction design and discovery.
+I’m a Postdoctoral Fellow at the Yoshioka lab, ICReDD (Institute for Chemical Reaction Design and Discovery), Hokkaido University, where I contribute to research in chemical reaction design and discovery.
 
 My research areas include:
 
@@ -16,7 +16,9 @@ My research areas include:
 
 ### Career Objective
 
-I hope to contribute to our understanding of molecular mechanisms by learning to better integrate experimental and computational approaches. I am interested in supporting research efforts in chemical reaction design, protein engineering, and exploring how generative AI methodologies might help in retrosynthesis, MOF design, and drug discovery applications.
+I hope to explore questions at the interface of structure and function, and to learn how to better understand and interpret experimental and computational approaches.
+
+I’m interested in understanding the dance (entropy) of nature, as the underlying principle of chemical potential is conserved across materials.
 
 ### Research Experience
 
@@ -34,13 +36,23 @@ I hope to contribute to our understanding of molecular mechanisms by learning to
 - Contributed to structural biology projects
 - Developed methodologies for protein structure determination
 
+### Internships
+
+**Intern** | _National Chemical Laboratory (CSIR), Pune, India_ | February 2017 – February 15, 2017
+
+- Responsibilities: Running routine NMR for small molecules.
+
+**Intern** | _Centre of Biomedical Research (CBMR), Lucknow, India_ | June 1, 2017 – September 30, 2017
+
+- Responsibilities: Introduction to Protein NMR. [CBMR Data](https://dineshnmr.wordpress.com/people/).
+
 ### Education
 
 - **Ph.D. in Crystallography and Biophysics**  
   Centre of Advanced Study in Crystallography and Biophysics, University of Madras  
   _Thesis: "Insights into photophysics and residual dynamic perturbation of Green Fluorescent protein (GFP)"_
 
-- **M.Sc. Physics**  
+- **M.Sc. Physics with Electronics as specialisation**  
   Madras Christian College, University of Madras
 
 - **B.Sc. Physics**  
@@ -48,7 +60,7 @@ I hope to contribute to our understanding of molecular mechanisms by learning to
 
 ### Research Focus
 
-My doctoral work explored the photophysics of Green Fluorescent Protein (GFP) using structural biology techniques including:
+During my doctoral work I studied the photophysics of Green Fluorescent Protein (GFP) using structural biology techniques including:
 
 - Single crystal macromolecular crystallography
 - Multidimensional protein NMR spectroscopy
@@ -61,7 +73,7 @@ My doctoral work explored the photophysics of Green Fluorescent Protein (GFP) us
 #### Structural Biology & Dynamics
 
 - Protein crystallography and structure determination
-- NMR structural elucidation of proteins and small molecules
+- NMR structural elucidation of peptides and small molecules
 - Molecular dynamics simulations using AMBER, GROMACS, and NAMD
 - Time-resolved crystallography for capturing protein dynamics
 
@@ -75,7 +87,7 @@ My doctoral work explored the photophysics of Green Fluorescent Protein (GFP) us
 #### Experimental Techniques
 
 - Protein expression and purification
-- NMR spectroscopy 400 MHz (lab) to 800 MHz (CBMR)
+- NMR spectroscopy 400 MHz (lab) | 800 MHz (CBMR)
 - FPLC systems (AKTA, Bio-Rad)
 - Single crystal X-ray diffraction
 - UV-Vis and fluorescence spectroscopy
@@ -86,11 +98,11 @@ My doctoral work explored the photophysics of Green Fluorescent Protein (GFP) us
 
 - **Molecular Dynamics**: AMBER, GROMACS, NAMD, Desmond
 - **Crystallography**: CCP4, Phenix, Coot, WinGX, SHELX
-- **NMR**: CARA, TALOS, Bruker TopSpin
+- **NMR**: Bruker TopSpin
 - **Small Molecule XRD**: Mercury, PLATON, ORTEP
 - **SAXS Analysis**: ATSAS suite
 - **Quantum Chemistry**: Gaussian
-- **Operating Systems**: Linux (Debian, RPM)
+
 
 #### Laboratory Experience
 
@@ -101,5 +113,3 @@ My doctoral work explored the photophysics of Green Fluorescent Protein (GFP) us
 - High-performance computing systems
 
 ---
-
-_I welcome opportunities to discuss research collaborations in structural biology, computational chemistry, and AI applications in molecular sciences._

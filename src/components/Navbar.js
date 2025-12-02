@@ -56,6 +56,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/resources" onClick={closeMenu}>
+              Resources
+            </Link>
+          </li>
+          <li>
             <Link to="/motivation" onClick={closeMenu}>
               Motivation
             </Link>

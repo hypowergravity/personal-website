@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 // import Contact from './pages/Contact';
 import Motivation from "./pages/Motivation";
 import Learning from "./pages/Learning";
+import Resources from "./pages/Resources";
 import { createPortal } from 'react-dom';
 import Footer from './pages/Footer'; // Add this import
 
@@ -24,6 +25,8 @@ function App() {
                     <Route path="/about" element={<About/>}/>
                     <Route path="/blog" element={<Blog/>}/>
                     <Route path="/learning" element={<Learning/>}/>
+                    <Route path="/resources" element={<Resources/>}/>
+                    <Route path="/library" element={<Resources/>}/>
                     <Route path="/motivation" element={<Motivation/>}/>
                     {/*<Route path="/contact" element={<Contact/>}/>*/}
                 </Routes>

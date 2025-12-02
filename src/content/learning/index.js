@@ -349,7 +349,7 @@ Both terms are non-negative (given the curvature condition $y_k^T \\Delta x_k > 
 The beauty of BFGS is that it approximates the benefits of Newton's method while avoiding its computational costs!
 
 
- self.fcalc_label_combo.setCurrentText([x for x in fcalc_labels if  x in ['FC,PHIC', 'F-model,PHIF-model']][0])`
+`
   }
 ];
 

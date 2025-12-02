@@ -34,8 +34,13 @@ function BlogPost({ post, onBack }) {
 
           <div className="post-content">
             <ReactMarkdown
-                remarkPlugins={[remarkMath, remarkGfm]}
-                rehypePlugins={[rehypeKatex]}
+              remarkPlugins={[remarkMath, remarkGfm]}
+              rehypePlugins={[rehypeKatex]}
+              components={{
+                a: ({ node, ...props }) => (
+                  <a {...props} target="_blank" rel="noreferrer" />
+                ),
+              }}
             >
               {post.content}
             </ReactMarkdown>

@@ -1,48 +1,47 @@
-## Motivation for My Research: AI-Driven Materials for Sustainable Energy
+## Motivation
 
-#### The Critical Challenge
+I’m motivated to learn from failure. I’m exploring how to encode crystallographic boundary conditions as priors and structural restraints in modeling and ML, and to move gradually toward simple closed‑loop workflows.
 
-Energy and water are abundant yet increasingly scarce resources that we need most. Climate change threatens freshwater supplies through glacier retreat and altered precipitation patterns, while groundwater depletion outpaces natural replenishment. Simultaneously, [fossil fuel reserves are projected to last only 40-50 years](https://www.iea.org/reports/world-energy-outlook-2024) at current consumption rates.
+### Materials at the Convergence Point
+I’m drawn to systems where structure guides function and can narrow design spaces with generative models:
+- Photosystem II: nature’s best catalyst that also fails and requires continuous repair of the D1/D2 complex; it reminds, that even billions of evolution has failure and repiar mechanism part of robust function.
+- Inorganic catalysts and Metal‑Organic Frameworks (MOFs): failures often occurs but this is where data are missing. Sacrificial agents can mitigate structural collapse but are not always cost‑effective, especially under radical conditions and mechanistic insights of the failure is not much considered but that is is where the real bottleneck of the experiments is needed to be studied.
 
-#### The Energy Transition Gap
 
-Current low-carbon technologies—hydroelectric, wind, and nuclear power—face limitations including 30-40 year operational lifetimes and specific challenges (e.g., nuclear waste management). [The IEA projects that reaching net-zero emissions by 2050](https://www.iea.org/reports/net-zero-by-2050) may require significant advances in energy conversion technologies.
+### Crystallographic Data
+Crystallographic data provide B‑factors (atomic displacement), occupancies, uncertainties, and symmetry constraints (e.g., Neumann’s principle). I wish to use these information as boundary conditions, together with experimental context, when training or fitting models. I also refer to databases to set structural constraints—symmetry, packing, coordination, and realistic alternates:
+ - ICSD (inorganic): https://icsd.fiz-karlsruhe.de/
+ - CSD (small molecules/MOF linkers): https://www.ccdc.cam.ac.uk/
 
-Bio-energy offers potential by converting renewable organic matter into fuels, but seems to require improved materials for efficient conversion processes. This suggests a need for better catalytic materials that might transform abundant renewable resources into usable energy.
+### AI as a Potential Design Tool
 
-#### Materials at the Convergence Point
+The combinatorial chemical space is large, and AI can help explore it. A few reference points:
 
-**Metal-Organic Frameworks (MOFs)** appear promising as electrocatalysts due to their:
+#### Protein examples
+In protein modeling, AlphaFold, RoseTTAFold, and ESMFold learn from PDB structures (https://www.rcsb.org/) to capture [protein folding](https://en.wikipedia.org/wiki/Protein_folding). Models implicitly use constraints from sequence, fold classes, and Ramachandran geometry, and can be adapted for generative tasks (e.g., RFdiffusion).
 
-- Tunable porosity for selective reactions
-- High surface area that could maximize active sites
-- Modular design that might enable optimization
+#### Inorganic/MOF considerations
+For inorganic and MOF systems, crystallographic information is a primary experimental constraint. For inorganic materials, energy above hull, phonon stability, and thermodynamics provide computational constraints. For MOFs, system size often limits experimental constraints,and mostly MD‑level data is supplemented with experimental structures for training.
 
-**Protein Engineering** provides inspiration from nature's catalysts, which achieve remarkable efficiency under mild conditions. Understanding protein structure-function relationships could potentially guide synthetic catalyst design.
+#### Example
+Test case: [MatterGen](https://www.nature.com/articles/s41586-025-08628-5)
 
-#### The Value of Crystallographic Data
+They targeted bulk modulus (50–200 GPa), generated 8192 candidates, filtered for energetic and phonon stability to 75, then selected 4 for synthesis. Only one was synthesized, and it showed positional/compositional disorder relative to the predicted structure (bulk modulus 158 ± 11 GPa vs 222 GPa by DFT). The work is state of the art, yet the gap between computation and experiment remained due to disorder and morphology effects. The key takeaway: dataset structure including uncertanity, disorder, and phase behavior matters, and adding such information as constraints could improve model‑to‑experiment agreement.
 
-Crystallography databases like the [Inorganic Crystal Structure Database (ICSD)](https://icsd.fiz-karlsruhe.de/) and the [Cambridge Crystallographic Data Centre's (CCDC)](https://www.ccdc.cam.ac.uk/) [Cambridge Structural Database (CSD)](https://www.ccdc.cam.ac.uk/solutions/csd-core/structure-data/) provide valuable repositories of structural information for inorganic and organic crystals that could be useful for MOF design. The CCDC, in particular, maintains a comprehensive database of small-molecule crystal structures, which might help in understanding how molecular components assemble into larger framework structures.
+#### MOF dataset observations
+MOFs adds flexibility and morphological changes (e.g., MIL‑53). In Uni‑MOF’s latent space (https://www.nature.com/articles/s41467-024-46276-x/figures/7), highlights CoreMOF (experimental) and hMOF (hypothetical) separate strongly, suggesting dataset issues rather than model capacity. That points to a need for stronger structural constraints and boundary conditions for inverse design.
 
-Similarly, the [Protein Data Bank (PDB)](https://www.rcsb.org/) contains detailed 3D structures of over 200,000 biological macromolecules, which could help protein engineers understand structure-function relationships and potentially design improved catalysts.
+The combinatorial space (MOF topologies, linker chemistries, protein sequences) is large. Exploring whether AI can help:
+- Predict properties before synthesis
+- Optimize candidates for application‑specific targets
+- Propose novel structures within crystallographic constraints
+- Find patterns linking structure and function
 
-These databases, combined with computational methods like density functional theory (DFT) and molecular dynamics simulations, might allow researchers to predict material properties, understand catalytic mechanisms, and explore new structures before expensive synthesis attempts.
+is functional because, screening large space using experiment is prohibitive.
 
-#### AI as a Potential Design Tool
-
-The vast combinatorial space of possible materials—millions of MOF combinations and protein sequences—seems to exceed traditional experimental exploration capabilities. AI might enable:
-
-- **Predictive design** of material properties before synthesis
-- **Optimization algorithms** for specific applications
-- **Discovery of novel structures** through computational exploration
-- **Pattern recognition** to better understand structure-function relationships
-
-Recent work like [MatterGen](https://ai.meta.com/blog/mattergen-ai-materials-discovery/) suggests AI's potential for materials design, showing how generative models might create novel crystalline materials with targeted properties—an approach that could be valuable for next-generation energy materials.
-
-#### Research Objective
-
-I hope to contribute to using AI for designing MOF-based electrocatalysts inspired by approaches like [MatterGen](https://ai.meta.com/blog/mattergen-ai-materials-discovery/) and explore bio-inspired materials for sustainable energy conversion. With some experience in structure-function relationships of both small molecules and macromolecules, particularly photo-sensitive proteins and computational modeling, I'm interested in learning how to bridge crystallographic analysis with materials design.
-
-A technical challenge that particularly interests me is working on better indexing algorithms for time-resolved crystallography. Current methods seem to struggle with accurately processing the rapid structural changes captured during dynamic events, which creates bottlenecks in understanding reaction mechanisms in real-time. I'd like to contribute to improving these algorithms, which might help unlock deeper insights into how materials transform during catalytic processes and potentially enable more precise design of efficient energy conversion systems.
-
-I hope that by learning to combine computational prediction with experimental validation, and helping to develop tools to capture materials in action, I might contribute to accelerating the discovery of materials that could address some of our energy and environmental challenges. The convergence of MOF chemistry, protein engineering, advanced crystallographic methods, and artificial intelligence seems to offer an opportunity to move beyond trial-and-error toward more intelligent design of materials that could help address sustainability needs.
+### Research Interests
+I wish to work on closed‑loop, failure‑aware , and on constraint‑aware models. In that direction I hope to explore:
+- Build small “resources” and information‑extraction agents to organize datasets
+- Use crystallographic boundary conditions (symmetry, packing, occupancies/alternates) as constraints in modeling and design
+- Work on indexing/refinement for time‑resolved crystallography and multi‑conformer modeling so dynamic data informs mechanism
+- Compare charge potentials from DFT with MicroED‑derived data where available

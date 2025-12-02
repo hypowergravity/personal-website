@@ -1,0 +1,12 @@
+---
+title: Symmetry Tools
+summary: Libraries to analyze space groups and confirm structural symmetry.
+tags: [symmetry, materials, tools]
+status: draft
+---
+
+| Tool/Library | Description | How it confirms correctness |
+| --- | --- | --- |
+| spglib | C library (with Python wrappers) that determines space groups and crystallographic properties from atomic coordinates and cell vectors. | Checks relaxed DFT coordinates against high‑symmetry candidates within a tolerance (e.g., SYMPREC). |
+| ASE (Atomic Simulation Environment) | Python library that reads VASP, QE, and other outputs; can call spglib automatically. | Lets you quickly compare a final DFT output to the expected structure in a few lines. |
+| pymatgen | Materials library built on spglib/ASE principles. | Provides SpacegroupAnalyzer to compute symmetry and transform to ideal high‑symmetry cells for definitive checks. |

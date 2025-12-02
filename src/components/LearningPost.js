@@ -50,6 +50,11 @@ function LearningPost({ post, onBack }) {
           <ReactMarkdown
             remarkPlugins={[remarkMath]}
             rehypePlugins={[rehypeKatex]}
+            components={{
+              a: ({ node, ...props }) => (
+                <a {...props} target="_blank" rel="noreferrer" />
+              ),
+            }}
           >
             {post.content}
           </ReactMarkdown>
