@@ -4,7 +4,7 @@ I’m motivated to learn from failure. I’m exploring how to encode crystallogr
 
 ### Materials at the Convergence Point
 I’m drawn to systems where structure guides function and can narrow design spaces with generative models:
-- Photosystem II: nature’s best catalyst that also fails and requires continuous repair of the D1/D2 complex; it reminds, that even billions of evolution has failure and repiar mechanism part of robust function.
+- Photosystem II: nature’s best catalyst that also fails and requires continuous repair of the D1/D2 complex; it reminds, that even billions of evolution has failure and repair mechanism part of robust function.
 - Inorganic catalysts and Metal‑Organic Frameworks (MOFs): failures often occurs but this is where data are missing. Sacrificial agents can mitigate structural collapse but are not always cost‑effective, especially under radical conditions and mechanistic insights of the failure is not much considered but that is is where the real bottleneck of the experiments is needed to be studied.
 
 
