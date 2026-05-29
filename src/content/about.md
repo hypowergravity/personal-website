@@ -22,7 +22,7 @@ I’m interested in understanding the dance (entropy) of nature, as the underlyi
 
 ### Research Experience
 
-**Postdoctoral Fellow** | _ICReDD, Hokkaido University_ | April 2025 - Present
+**Postdoctoral Fellow** | _ICReDD, Hokkaido University_ | April 2025 - May 2026
 
 - Research in chemical reaction design and discovery
 
